@@ -1,0 +1,67 @@
+// Layout utility styles (.l-*)
+
+.l-flex {
+  display: flex;
+}
+
+.l-fdc {
+  flex-direction: column;
+}
+
+.l-aic {
+  align-items: center;
+}
+
+.l-fb100 {
+  flex-basis: 100%;
+}
+
+.l-w100 {
+  width: 100%;
+}
+
+.l-w80 {
+  width: 80%;
+}
+
+.l-w50 {
+  width: 50%;
+}
+
+.l-ch {
+  display: block;
+  margin: 0 auto;
+}
+
+// Build all of our margin and padding classes
+@each $prop, $prop-abbrev in (
+  margin: m,
+  padding: p
+) {
+
+  // If no side is specified, use shorthand:
+  // .l-mm {
+  //   margin: $s-m;
+  // }
+  @each $spacing, $spacing-var in (
+    s: $s-s,
+    m: $s-m,
+    l: $s-l
+  ) {
+    .l-#{$prop-abbrev}#{$spacing} {
+      #{$prop}: #{$spacing-var};
+    }
+
+    // Loop through sides
+    @each $side, $side-abbrev in (
+      top: t,
+      right: r,
+      bottom: b,
+      left: l
+    ) {
+      .l-#{$prop-abbrev}#{$side-abbrev}#{$spacing} {
+        #{$prop}-#{$side}: #{$spacing-var};
+      }
+    }
+  }
+}

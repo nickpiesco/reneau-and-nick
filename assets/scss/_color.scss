@@ -1,0 +1,32 @@
+// Colour utility styles (.c-*)
+
+.c-bg-p {
+  background-color: $c-primary;
+}
+
+.c-bg-a1 {
+  background-color: $c-accent-1;
+}
+
+.c-bg-a2 {
+  background-color: $c-accent-2;
+}
+
+.c-bg-b {
+  background-color: $c-black;
+}
+
+.c-bg-nl {
+  background-color: $c-neutral-light;
+  color: $c-black;
+}
+
+.c-bg-nd {
+  background-color: $c-neutral-dark;
+  color: $c-black;
+}
+
+.c-bg-w {
+  background-color: $c-white;
+  color: $c-black;
+}

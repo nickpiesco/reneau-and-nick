@@ -1,0 +1,9 @@
+// Document wrapper styles
+
+body {
+  @extend %t-body;
+  background-color: $c-black;
+  color: $c-white;
+  font-size: 24px;
+  line-height: 1.3;
+}
