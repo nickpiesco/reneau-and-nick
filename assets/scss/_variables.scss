@@ -1,3 +1,4 @@
+// Colours
 $c-primary: #4c663e; // ‘Mountain Forest’
 $c-accent-1: #2d5069; // ‘Blue Lava’
 $c-accent-2: #b1393e; // ‘Red Gumball’
@@ -6,6 +7,7 @@ $c-neutral-dark: #cabba3; // ‘Dusty Trail’
 $c-white: #e5d9c6; // ‘Bone White’
 $c-black: adjust-color($c-accent-1, $lightness: -20%);
 
+// Spacing for margins and padding
 $s-s: 0.5rem;
 $s-m: 1rem;
 $s-l: 2rem;
