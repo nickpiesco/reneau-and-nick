@@ -1,9 +1,9 @@
 $c-primary: #4c663e; // ‘Mountain Forest’
 $c-accent-1: #2d5069; // ‘Blue Lava’
 $c-accent-2: #b1393e; // ‘Red Gumball’
-$c-neutral-light: #d1c9bb;
-$c-neutral-dark: #cabba3;
-$c-white: white;
+$c-neutral-light: #d1c9bb; // ‘Moth Gray’
+$c-neutral-dark: #cabba3; // ‘Dusty Trail’
+$c-white: #e5d9c6; // ‘Bone White’
 $c-black: adjust-color($c-accent-1, $lightness: -20%);
 
 $s-s: 0.5rem;
