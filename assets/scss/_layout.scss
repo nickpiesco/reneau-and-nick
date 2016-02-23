@@ -49,7 +49,7 @@
     l: $s-l
   ) {
     .l-#{$prop-abbrev}#{$spacing} {
-      #{$prop}: #{$spacing-var};
+      #{$prop}: $spacing-var;
     }
 
     // Loop through sides
@@ -60,7 +60,7 @@
       left: l
     ) {
       .l-#{$prop-abbrev}#{$side-abbrev}#{$spacing} {
-        #{$prop}-#{$side}: #{$spacing-var};
+        #{$prop}-#{$side}: $spacing-var;
       }
     }
   }
