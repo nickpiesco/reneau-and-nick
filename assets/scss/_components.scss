@@ -1,0 +1,33 @@
+// Component styles (.c-*)
+
+.c-btn {
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+// I would totally write a map for these, but colour vars come back
+// as strings, and AFAIK there’s no way to cast them to Sass Colors
+// to do the opacity manipulation
+
+.c-btn-light {
+  border-color: $co-white;
+  &:hover {
+    background-color: rgba($co-white, 0.1);
+  }
+  &:active {
+    background-color: rgba($co-white, 0.2);
+  }
+}
+
+.c-btn-dark {
+  border-color: $co-black;
+  &:hover {
+    background-color: rgba($co-black, 0.1);
+  }
+  &:active {
+    background-color: rgba($co-black, 0.2);
+  }
+}
